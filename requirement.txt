@@ -4,3 +4,9 @@ numpy
 scikit-learn
 matplotlib
 seaborn
+pymupdf
+pymongo
+python-dotenv
+pydantic
+langchain-community
+pypdf

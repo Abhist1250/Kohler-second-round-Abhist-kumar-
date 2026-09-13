@@ -11,3 +11,9 @@ what is a hybrid rag structure???
 
 Prompt 3:-
 
+lets start scrapping data from websites,  give me a list of websites from which i can scrape data , 
+or if there is any uci or kaggle dataset that i can refer. I'm expecting to have 100-120 data 
+points.
+
+Prompt 4:-
+

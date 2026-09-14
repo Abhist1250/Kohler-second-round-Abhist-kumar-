@@ -10,3 +10,6 @@ python-dotenv
 pydantic
 langchain-community
 pypdf
+langchain-groq
+python-dotenv
+langchain

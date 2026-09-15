@@ -13,3 +13,4 @@ pypdf
 langchain-groq
 python-dotenv
 langchain
+openai

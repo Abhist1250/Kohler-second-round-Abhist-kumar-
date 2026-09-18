@@ -1,0 +1,2660 @@
+[
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37da9fc"
+    },
+    "product_id": "1408991-IN4-A",
+    "category": "Other",
+    "collection": "Not specified",
+    "color": [
+      "White"
+    ],
+    "dimensions": {
+      "width_mm": 344,
+      "depth_mm": 483,
+      "height_mm": 141,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "source",
+        "depth_mm": "source",
+        "height_mm": "source"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Ergonomic and Straight line design suitable for compact rooms with deck space.",
+      "Easy installation as it requires counter cutting to accommodate drain only.",
+      "Optimum Depth to contain Splashes.",
+      "Above counter without faucet deck.",
+      "Only drain cutting (no profile cutting required).",
+      "Without Overflow Hole"
+    ],
+    "installation": {
+      "type": "Above Counter",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Vitreous China",
+    "product_name": "SPAN® Square Vessel Without Deck ( Small)",
+    "source_pdf": "1408991-IN4.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Not specified",
+    "validation_problems": [
+      "Missing category"
+    ],
+    "category_original": "Other",
+    "subcategory_original": "Not specified",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": true,
+    "data_quality": "complete_for_spatial_use",
+    "pricing": {
+      "price_inr": 18000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37da9fd"
+    },
+    "product_id": "29024IN-1",
+    "category": "Vessel",
+    "collection": "Not specified",
+    "color": [
+      "White"
+    ],
+    "dimensions": {
+      "width_mm": 470,
+      "depth_mm": 116,
+      "height_mm": 139,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "source",
+        "depth_mm": "source",
+        "height_mm": "source"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Vitreous China",
+      "Circular Design",
+      "Without Overflow",
+      "Above counter",
+      "Only Drain cutting (no profile cutting required)"
+    ],
+    "installation": {
+      "type": "Above counter",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Vitreous China",
+    "product_name": "CHALICE ROUND VESSEL 1TAP HOLE",
+    "source_pdf": "29024IN-1_Chalice w deck vessel.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Vessel",
+    "validation_problems": [],
+    "category_original": "Vessel",
+    "subcategory_original": "Vessel",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": true,
+    "data_quality": "complete_for_spatial_use",
+    "pricing": {
+      "price_inr": 18000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37da9fe"
+    },
+    "product_id": "1311520-A04-D",
+    "category": "BASINS / COUNTERTOP",
+    "collection": "Not specified",
+    "color": [
+      "white",
+      "honed black"
+    ],
+    "dimensions": {
+      "width_mm": 393,
+      "depth_mm": 393,
+      "height_mm": 120,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "source",
+        "depth_mm": "source",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Bench top installation",
+      "Slim vessel",
+      "CleanCoatTM - stain resistant & easy to clean"
+    ],
+    "installation": {
+      "type": "Bench top installation",
+      "waste_outlet": "DN32 waste without overflow",
+      "rough_in_mm": 50,
+      "rough_in_available": true
+    },
+    "material": "Ceramic",
+    "product_name": "Mica® Square 393mm Basin",
+    "source_pdf": "90011T.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Countertop Basin",
+    "validation_problems": [
+      "Missing height"
+    ],
+    "category_original": "BASINS / COUNTERTOP",
+    "subcategory_original": "Countertop Basin",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 18000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37da9ff"
+    },
+    "product_id": "K-12927IN",
+    "category": "Other",
+    "collection": "Not specified",
+    "color": [
+      "Polished Chrome",
+      "Vibrant® French Gold",
+      "Vibrant® Brushed Nickel"
+    ],
+    "dimensions": {
+      "width_mm": 50,
+      "depth_mm": 100,
+      "height_mm": 150,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Designed to coordinate with a range of KOHLER faucets",
+      "Thread = G 1/2",
+      "Includes wall-mount bracket",
+      "Includes hose",
+      "Handshower rated max flow: 3.3 gal/min (12.5 l/min)"
+    ],
+    "installation": {
+      "type": "Wall-mount",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Not specified",
+    "product_name": "Complimentary™ Hygiene Spray",
+    "source_pdf": "K-12927IN_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Not specified",
+    "validation_problems": [
+      "Missing category",
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Other",
+    "subcategory_original": "Not specified",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 6500,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa00"
+    },
+    "product_id": "K-1381T-S",
+    "category": "Toilet",
+    "collection": "Veil",
+    "color": [
+      "White"
+    ],
+    "dimensions": {
+      "width_mm": 380,
+      "depth_mm": 650,
+      "height_mm": 390,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "source"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "One-piece toilets integrate the tank and bowl into a seamless, easy-to-clean design",
+      "Elongated bowl offers added room and comfort",
+      "Dual-flush offers a choice of 0.8 or 1.28 gpf (3.0 or 4.5 lpf)",
+      "Washdown flushing system",
+      "Left-hand Polished Chrome trip lever",
+      "52 mm (2 inch) fully glazed trapway",
+      "Fully skirted trapway simplifies cleaning",
+      "Seat and lid included",
+      "Quiet-Close™ functionality to prevent seat from slamming",
+      "Quick-Attach™ hardware for fast and secure installation",
+      "Quick-Release™ functionality allows seat to be removed easily from toilet for convenient cleaning",
+      "Coordinates with other products in the Veil collection",
+      "Compatible with C3™ and PureWash™ electronic bidet seats (sold separately)"
+    ],
+    "installation": {
+      "type": "Floor-mount",
+      "waste_outlet": "Floor",
+      "rough_in_mm": 305,
+      "rough_in_available": true
+    },
+    "material": "Plastic seat",
+    "product_name": "Veil™ One-piece elongated toilet with skirted trapway, dual-flush",
+    "source_pdf": "K-1381T-S_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "One-piece elongated toilet",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth"
+    ],
+    "category_original": "Toilet",
+    "subcategory_original": "One-piece elongated toilet",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 48000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa01"
+    },
+    "product_id": "K-17629T-NS",
+    "category": "Toilet",
+    "collection": "Ove™",
+    "color": [
+      "White"
+    ],
+    "dimensions": {
+      "width_mm": 370,
+      "depth_mm": 650,
+      "height_mm": 390,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "source"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "One-piece toilets integrate the tank and bowl into a seamless, easy-to-clean design",
+      "Round-front bowl offers an ideal solution for smaller bathrooms and powder rooms",
+      "Rim-to-floor height: 390 mm (15-3/8 inches)",
+      "Top-mount Polished Chrome dual-flush button offers a choice of 0.8 or 1.6 gpf (3.0 or 6.0 lpf)",
+      "58 mm (2-5/16 inch) fully glazed trapway",
+      "Fully skirted trapway simplifies cleaning",
+      "Coordinates with other products in the Ove™ collection",
+      "Compatible with C3™ toilet seats and the Ove™ Quiet-Close toilet seat and lid (sold separately)"
+    ],
+    "installation": {
+      "type": "Floor-mount",
+      "waste_outlet": "Floor",
+      "rough_in_mm": 185,
+      "rough_in_available": true
+    },
+    "material": "Not specified",
+    "product_name": "Ove™ One-piece round-front toilet with skirted trapway, dual-flush",
+    "source_pdf": "K-17629T-NS_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "One-piece toilet",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth"
+    ],
+    "category_original": "Toilet",
+    "subcategory_original": "One-piece toilet",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 42000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa02"
+    },
+    "product_id": "K-17660T-M",
+    "category": "Toilet Seat",
+    "collection": "Not specified",
+    "color": [
+      "White"
+    ],
+    "dimensions": {
+      "width_mm": 380,
+      "depth_mm": 650,
+      "height_mm": 400,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Elongated closed-front seat with lid",
+      "Quiet-Close™ functionality to prevent seat from slamming",
+      "ReadyLatch™ hinge provides a positive lock/unlock latch to securely hold seat in position, yet seat easily removes for cleaning or adjusting fit",
+      "Quick-Release™ functionality allows seat to be removed easily from toilet for convenient cleaning",
+      "Quick-Attach™ hardware for fast and secure installation",
+      "Grip-Tight bumpers hold seat firmly in place"
+    ],
+    "installation": {
+      "type": "Not specified",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Plastic construction",
+    "product_name": "Ove™ Quiet-Close™ elongated toilet seat",
+    "source_pdf": "K-17660T-M_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Not specified",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Toilet Seat",
+    "subcategory_original": "Not specified",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 40000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa03"
+    },
+    "product_id": "K-1851IN",
+    "category": "Other",
+    "collection": "Not specified",
+    "color": [
+      "White"
+    ],
+    "dimensions": {
+      "width_mm": 100,
+      "depth_mm": 100,
+      "height_mm": 395,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "source"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Round-front bowl offers an ideal solution for smaller bathrooms and powder rooms",
+      "Rim-to-floor height: 15.55 inches (395 mm)",
+      "Washdown flushing system",
+      "65 mm (2-1/2 inch) fully glazed trapway",
+      "Concealed trapway brings an enhanced design to the bathroom and facilitates easy cleaning",
+      "Antimicrobial finish inhibits the growth of mold-, mildew-, stain-, and odor-causing bacteria on the fixture surface",
+      "Bowl only; requires tank and toilet seat (sold separately)"
+    ],
+    "installation": {
+      "type": "Floor-mount",
+      "waste_outlet": "Floor",
+      "rough_in_mm": 180,
+      "rough_in_available": true
+    },
+    "material": "Not specified",
+    "product_name": "Brive Plus",
+    "source_pdf": "K-1851IN_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Not specified",
+    "validation_problems": [
+      "Missing category",
+      "Missing width",
+      "Missing depth"
+    ],
+    "category_original": "Other",
+    "subcategory_original": "Not specified",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 15000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa04"
+    },
+    "product_id": "K-1853IN",
+    "category": "Other",
+    "collection": "Not specified",
+    "color": [
+      "White"
+    ],
+    "dimensions": {
+      "width_mm": 100,
+      "depth_mm": 100,
+      "height_mm": 395,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "source"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Elongated bowl offers added room and comfort",
+      "Rim-to-floor height: 15.55 inches (395 mm)",
+      "Washdown flushing system",
+      "2 inch (51 mm) fully glazed trapway",
+      "Concealed trapway brings an enhanced design to the bathroom and facilitates easy cleaning",
+      "Bowl only; requires tank and toilet seat (sold separately)"
+    ],
+    "installation": {
+      "type": "Floor-mount",
+      "waste_outlet": "Floor",
+      "rough_in_mm": 220,
+      "rough_in_available": true
+    },
+    "material": "Not specified",
+    "product_name": "Brive Plus",
+    "source_pdf": "K-1853IN_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Not specified",
+    "validation_problems": [
+      "Missing category",
+      "Missing width",
+      "Missing depth"
+    ],
+    "category_original": "Other",
+    "subcategory_original": "Not specified",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 15000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa05"
+    },
+    "product_id": "K-21226IN",
+    "category": "Sink",
+    "collection": "ModernLife Edge",
+    "color": [
+      "Honed Black",
+      "Thunder grey",
+      "Honed Peacock",
+      "Honed Lush"
+    ],
+    "dimensions": {
+      "width_mm": 600,
+      "depth_mm": 113,
+      "height_mm": 120,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "source",
+        "depth_mm": "source",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Contemporary design makes a modern statement",
+      "Rectangular basin with rounded corners",
+      "No faucet holes; requires wall- or deck-mount faucet",
+      "Without overflow",
+      "Part of the ModernLife Edge collection",
+      "Faucet and drain sold separately"
+    ],
+    "installation": {
+      "type": "Vessel",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Vitreous china",
+    "product_name": "ModernLife Edge 600 mm rectangular vessel bathroom sink, no overflow",
+    "source_pdf": "K-21226IN_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Vessel sink",
+    "validation_problems": [
+      "Missing height"
+    ],
+    "category_original": "Sink",
+    "subcategory_original": "Vessel sink",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 24000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa06"
+    },
+    "product_id": "K-2200IN",
+    "category": "Sink",
+    "collection": "Not specified",
+    "color": [
+      "White",
+      "Cashmere",
+      "Black"
+    ],
+    "dimensions": {
+      "width_mm": 413,
+      "depth_mm": 400,
+      "height_mm": 150,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "source",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Traditional design creates a classic look",
+      "Round basin",
+      "No faucet holes; requires wall- or tall deck-mount faucet",
+      "Center drain, no overflow",
+      "Glazed underside offers beauty from all angles"
+    ],
+    "installation": {
+      "type": "Semi-recessed vessel",
+      "waste_outlet": "Center drain, no overflow",
+      "rough_in_mm": 464,
+      "rough_in_available": true
+    },
+    "material": "Vitreous china",
+    "product_name": "Conical Bell™",
+    "source_pdf": "K-2200IN_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Vessel sink",
+    "validation_problems": [
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Sink",
+    "subcategory_original": "Vessel sink",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 18000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa07"
+    },
+    "product_id": "K-23486IN-4ND",
+    "category": "Faucet",
+    "collection": "Parallel",
+    "color": [
+      "Polished Chrome",
+      "Vibrant French Gold",
+      "Vibrant Brushed Bronze",
+      "Matte Black",
+      "Vibrant Rose Gold",
+      "Vibrant Brushed Rose Gold"
+    ],
+    "dimensions": {
+      "width_mm": 55,
+      "depth_mm": 164,
+      "height_mm": 150,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Single handle controls both on/off activation and temperature setting",
+      "164 mm spout reach",
+      "9.0 lpm maximum flow rate at 3.0 bar",
+      "KOHLER ceramic disc valves exceed industry longevity standards for a lifetime of durable performance",
+      "Coordinates with other products in the Parallel collection"
+    ],
+    "installation": {
+      "type": "Wall-mount",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Premium metal",
+    "product_name": "Parallel™ Wall-mount bathroom sink faucet, 9.0 lpm",
+    "source_pdf": "K-23486IN-4ND_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Wall-mount bathroom sink faucet",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Faucet",
+    "subcategory_original": "Wall-mount bathroom sink faucet",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 24000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa08"
+    },
+    "product_id": "K-23966IN-4ND",
+    "category": "Faucet",
+    "collection": "Not specified",
+    "color": [
+      "Polished Chrome",
+      "Vibrant® French Gold",
+      "Matte Black",
+      "Vibrant Rose Gold"
+    ],
+    "dimensions": {
+      "width_mm": 55,
+      "depth_mm": 120,
+      "height_mm": 150,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Single handle controls both on/off activation and temperature setting",
+      "Spout height 2-13/32\" (61 mm)",
+      "Spout reach 4-5/8\" (117 mm)",
+      "Maximum flow rate 1.8 gpm (7.0 lpm) at 43.5 psi (3.0 bar)",
+      "Premium metal construction for durability and reliability",
+      "KOHLER finishes resist corrosion and tarnishing"
+    ],
+    "installation": {
+      "type": "Single hole",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Premium metal construction",
+    "product_name": "KOHLER VIVE® Single-handle bathroom sink faucet, 7.0 lpm",
+    "source_pdf": "K-23966IN-4ND_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Single-handle bathroom sink faucet",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Faucet",
+    "subcategory_original": "Single-handle bathroom sink faucet",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 18000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa09"
+    },
+    "product_id": "K-23967IN-4ND",
+    "category": "Faucet",
+    "collection": "VIVE",
+    "color": [
+      "Polished Chrome",
+      "Vibrant® French Gold",
+      "Matte Black",
+      "Vibrant Rose Gold"
+    ],
+    "dimensions": {
+      "width_mm": 55,
+      "depth_mm": 120,
+      "height_mm": 200,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Single handle controls both on/off activation and temperature setting",
+      "7.19 inch (183 mm) spout height",
+      "5.16 inch (131 mm) spout reach",
+      "1.5 gpm (5.5 lpm) maximum flow rate at 43.5 psi (3.0 bar)",
+      "KOHLER finishes resist corrosion and tarnishing"
+    ],
+    "installation": {
+      "type": "Single hole",
+      "waste_outlet": "Drain sold separately",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Premium metal construction",
+    "product_name": "KOHLER VIVE® Tall single-handle bathroom sink faucet, 5.5 lpm",
+    "source_pdf": "K-23967IN-4ND_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Tall single-handle bathroom sink faucet",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Faucet",
+    "subcategory_original": "Tall single-handle bathroom sink faucet",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 28000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa0a"
+    },
+    "product_id": "K-25316IN",
+    "category": "Bathroom sink",
+    "collection": "Not specified",
+    "color": [
+      "White"
+    ],
+    "dimensions": {
+      "width_mm": 537,
+      "depth_mm": 322,
+      "height_mm": 120,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "source",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Minimalist design with thin, rounded edges",
+      "Rectangular basin",
+      "Integrated faucet deck provides additional water containment",
+      "Single faucet hole at deck center",
+      "Without overflow",
+      "Glazed underside offers beauty from all angles"
+    ],
+    "installation": {
+      "type": "Vessel",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Vitreous china",
+    "product_name": "Span™ 537 mm rectangular vessel bathroom sink with glazed underside, no overflow",
+    "source_pdf": "K-25316IN_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Vessel sink",
+    "validation_problems": [
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Bathroom sink",
+    "subcategory_original": "Vessel sink",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 23000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa0b"
+    },
+    "product_id": "K-2661IN",
+    "category": "Bathroom sink",
+    "collection": "Vox™",
+    "color": [
+      "White",
+      "Black"
+    ],
+    "dimensions": {
+      "width_mm": 413,
+      "depth_mm": 413,
+      "height_mm": 120,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "source",
+        "depth_mm": "source",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Deep square basin with a contemporary design minimizes splash",
+      "No faucet holes; requires wall- or deck-mount faucet",
+      "Center drain",
+      "With overflow and overflow cover"
+    ],
+    "installation": {
+      "type": "Semi-recessed vessel",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Vitreous china",
+    "product_name": "Vox™ 413 mm square vessel bathroom sink",
+    "source_pdf": "K-2661IN_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Vessel",
+    "validation_problems": [
+      "Missing height"
+    ],
+    "category_original": "Bathroom sink",
+    "subcategory_original": "Vessel",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 18000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa0c"
+    },
+    "product_id": "K-27477IN-4ND",
+    "category": "Faucet",
+    "collection": "Not specified",
+    "color": [
+      "Polished Chrome"
+    ],
+    "dimensions": {
+      "width_mm": 55,
+      "depth_mm": 120,
+      "height_mm": 150,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Sleek and contemporary design",
+      "Single handle provides on/off activation, volume, and temperature control",
+      "Red/blue indexing on handle",
+      "3.94 inch (100 mm) spout reach",
+      "5.81 inch (148 mm) spout height",
+      "Aerated flow",
+      "5.08 gpm (19.2 lpm) maximum flow rate at 80 psi (5.5 bar)",
+      "KOHLER® ceramic disc valves exceed industry longevity standards for a lifetime of durable performance",
+      "Drain sold separately"
+    ],
+    "installation": {
+      "type": "Deck-mount",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Premium material",
+    "product_name": "Fore Tri® Single-handle bathroom sink faucet, 19.2 lpm",
+    "source_pdf": "K-27477IN-4ND_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Single-handle bathroom sink faucet",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Faucet",
+    "subcategory_original": "Single-handle bathroom sink faucet",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 18000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa0d"
+    },
+    "product_id": "K-27480IN-4ND",
+    "category": "Faucet",
+    "collection": "Fore Line™",
+    "color": [
+      "Polished Chrome",
+      "Vibrant® French Gold"
+    ],
+    "dimensions": {
+      "width_mm": 55,
+      "depth_mm": 120,
+      "height_mm": 200,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Single handle provides on/off activation, volume, and temperature control",
+      "Red/blue indexing on handle",
+      "124 mm (4.87 inch) spout reach",
+      "200 mm (7.88 inch) spout height",
+      "Tall height is ideal for vessel-style sinks",
+      "2.9 gpm (11.0 lpm) maximum flow rate at 80 psi (5.5 bar)",
+      "Aerated flow",
+      "KOHLER® ceramic disc valves exceed industry longevity standards for a lifetime of durable performance",
+      "Drain sold separately"
+    ],
+    "installation": {
+      "type": "Deck-mount",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Premium material",
+    "product_name": "Fore Line™ Tall single-handle bathroom sink faucet, 11.0 lpm",
+    "source_pdf": "K-27480IN-4ND_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Bathroom sink faucet",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Faucet",
+    "subcategory_original": "Bathroom sink faucet",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 28000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa0e"
+    },
+    "product_id": "K-27485IN-4",
+    "category": "Faucet",
+    "collection": "Fore Line™",
+    "color": [
+      "Polished Chrome",
+      "Vibrant® French Gold"
+    ],
+    "dimensions": {
+      "width_mm": 55,
+      "depth_mm": 96,
+      "height_mm": 86,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "source",
+        "height_mm": "source"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "For use with cold water line only",
+      "Single handle provides on/off activation and volume control",
+      "86 mm (3.4 inch) spout height",
+      "96 mm (3.76 inch) spout reach",
+      "4.22 gpm (16.0 lpm) maximum flow rate at 43.5 psi (3.0 bar)",
+      "KOHLER ceramic disc valves exceed industry longevity standards by over two times, ensuring durable performance for life",
+      "Drain sold separately",
+      "Includes installation hardware",
+      "Premium metal construction for durability and reliability",
+      "KOHLER finishes resist corrosion and tarnishing"
+    ],
+    "installation": {
+      "type": "Deck-mount, single-hole installation",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Premium metal construction",
+    "product_name": "Fore Line™ Single-handle bathroom sink faucet, cold only, 18.4 lpm",
+    "source_pdf": "K-27485IN-4_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Not specified",
+    "validation_problems": [
+      "Missing width"
+    ],
+    "category_original": "Faucet",
+    "subcategory_original": "Not specified",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 12000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa0f"
+    },
+    "product_id": "K-28529IN",
+    "category": "Toilet",
+    "collection": "Not specified",
+    "color": [
+      "White"
+    ],
+    "dimensions": {
+      "width_mm": 370,
+      "depth_mm": 650,
+      "height_mm": 400,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "source"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": true,
+      "required_source": "source",
+      "voltage": "220-240 V",
+      "power_w": 1200,
+      "power_available": true
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "One-piece toilets integrate the tank and bowl into a seamless, easy-to-clean design",
+      "Round-front bowl offers an ideal solution for smaller bathrooms and powder rooms",
+      "Dual-flush offers a choice of 0.8 or 1.2 gpf (3.0 or 4.5 lpf)",
+      "Touchless technology allows hands-free operation to actuate the flush",
+      "Automatic flushing after every use; flush can also be controlled by the remote control or backup button",
+      "Manual flush button on control panel",
+      "Fully skirted trapway simplifies cleaning",
+      "1.9 inch (49 mm) fully glazed trapway",
+      "Includes bidet seat",
+      "Quiet-Close™ functionality to prevent seat from slamming",
+      "Grip-Tight bumpers hold seat firmly in place",
+      "Stainless steel wand offers adjustable spray shape, position, water pressure, temperature, pulsate, and oscillate functions",
+      "Front and rear wash modes provide warm water for cleansing",
+      "Self-cleaning function uses UV light to automatically sanitize the wand surfaces",
+      "Motion-activated, hands-free opening/closing of cover",
+      "Warm-air drying system",
+      "Heated seat with adjustable temperature settings",
+      "Seat features automatic deodorization",
+      "Energy Save feature monitors usage and adjusts heated seat settings to save energy"
+    ],
+    "installation": {
+      "type": "Floor-mount",
+      "waste_outlet": "Floor",
+      "rough_in_mm": 305,
+      "rough_in_available": true
+    },
+    "material": "Plastic seat",
+    "product_name": "Leap™ One-piece round-front smart toilet, dual-flush",
+    "source_pdf": "K-28529IN_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "One-piece round-front smart toilet",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth"
+    ],
+    "category_original": "Toilet",
+    "subcategory_original": "One-piece round-front smart toilet",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 145000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa10"
+    },
+    "product_id": "K-28784IN",
+    "category": "Bathroom Sink",
+    "collection": "Not specified",
+    "color": [
+      "White",
+      "Cashmere",
+      "Black",
+      "Indigo Gloss",
+      "Teak Berry"
+    ],
+    "dimensions": {
+      "width_mm": 552,
+      "depth_mm": 331,
+      "height_mm": 120,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Rectangular basin with rounded corners",
+      "Sleek and contemporary design",
+      "Unique front slotted drain creates a sleek look",
+      "Hidden drain connector maintains design continuity",
+      "Without overflow",
+      "No faucet holes; requires wall- or tall counter-mount faucet"
+    ],
+    "installation": {
+      "type": "Semi-recessed vessel",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Vitreous china",
+    "product_name": "KOHLER VIVE® 552 mm rectangular vessel bathroom sink, no overflow",
+    "source_pdf": "K-28784IN_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Vessel",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Bathroom Sink",
+    "subcategory_original": "Vessel",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 25000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa11"
+    },
+    "product_id": "K-33123IN-HC",
+    "category": "Toilet",
+    "collection": "Vive",
+    "color": [
+      "White"
+    ],
+    "dimensions": {
+      "width_mm": 370,
+      "depth_mm": 650,
+      "height_mm": 400,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "source"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "One-piece toilets integrate the tank and bowl into a seamless, easy-to-clean design",
+      "Round-front bowl",
+      "Back-to-wall design prevents dirt buildup for improved hygiene",
+      "Rimless design makes toilet bowl more hygienic and easier to clean",
+      "Top-mount polished chrome dual-flush button offers a choice of 3.0 or 4.5 lpf (0.8 or 1.28 gpf)",
+      "60 mm fully glazed trapway",
+      "Fully skirted trapway simplifies cleaning and looks elegant",
+      "Washdown flushing system",
+      "Coordinates with other products in the Vive collection",
+      "Hidden cord design conceals bidet seat cords (bidet seat sold separately)",
+      "Compatible with PureWash manual bidet seat"
+    ],
+    "installation": {
+      "type": "Floor-mount",
+      "waste_outlet": "Floor",
+      "rough_in_mm": 220,
+      "rough_in_available": true
+    },
+    "material": "Not specified",
+    "product_name": "KOHLER VIVE Hidden cord one-piece round-front back-to-wall toilet with skirted trapway, dual-flush",
+    "source_pdf": "K-33123IN-HC_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Not specified",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth"
+    ],
+    "category_original": "Toilet",
+    "subcategory_original": "Not specified",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 42000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa12"
+    },
+    "product_id": "K-3983IN-S",
+    "category": "Toilet",
+    "collection": "Reach™",
+    "color": [
+      "White"
+    ],
+    "dimensions": {
+      "width_mm": 370,
+      "depth_mm": 650,
+      "height_mm": 391,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "source"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "One-piece toilets integrate the tank and bowl into a seamless, easy-to-clean design",
+      "Round-front bowl offers an ideal solution for smaller bathrooms and powder rooms",
+      "Top-mount polished chrome dual-flush button offers a choice of 1.0 or 1.28 gpf (3.3 or 4.8 lpf)",
+      "Class Five™ flushing technology provides powerful flushing performance and best-in-class bowl cleanliness",
+      "2.44 inch (62 mm) fully glazed trapway",
+      "Fully skirted trapway simplifies cleaning",
+      "Round-front seat with lid",
+      "Quiet-Close™ functionality to prevent seat from slamming",
+      "Coordinates with other products in the Reach™ collection"
+    ],
+    "installation": {
+      "type": "Floor-mount",
+      "waste_outlet": "Floor",
+      "rough_in_mm": 305,
+      "rough_in_available": true
+    },
+    "material": "Plastic seat",
+    "product_name": "Reach™ One-piece round-front toilet with skirted trapway, dual-flush",
+    "source_pdf": "K-3983IN-S_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "One-piece round-front toilet",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth"
+    ],
+    "category_original": "Toilet",
+    "subcategory_original": "One-piece round-front toilet",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 42000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa13"
+    },
+    "product_id": "K-5373IN",
+    "category": "Bathroom sink",
+    "collection": "Forefront™",
+    "color": [
+      "White",
+      "Cashmere",
+      "Black"
+    ],
+    "dimensions": {
+      "width_mm": 580,
+      "depth_mm": 348,
+      "height_mm": 120,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Deep rectangular basin with a contemporary design minimizes splash",
+      "No faucet holes; requires wall- or deck-mount faucet",
+      "Center drain",
+      "With overflow and overflow cover"
+    ],
+    "installation": {
+      "type": "Semi-recessed vessel",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Vitreous china",
+    "product_name": "Forefront™ 580 mm rectangular vessel bathroom sink",
+    "source_pdf": "K-5373IN_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Vessel",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Bathroom sink",
+    "subcategory_original": "Vessel",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 26000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa14"
+    },
+    "product_id": "K-5684IN-4ND",
+    "category": "Faucet Trim",
+    "collection": "Aleo+",
+    "color": [
+      "Polished Chrome",
+      "Vibrant® French Gold",
+      "Vibrant® Brushed Nickel",
+      "Vibrant® Brushed Bronze",
+      "Matte Black",
+      "Vibrant Brushed Rose Gold"
+    ],
+    "dimensions": {
+      "width_mm": 55,
+      "depth_mm": 170,
+      "height_mm": 150,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Sleek contemporary design",
+      "Single Lever handle allows for on/off activation, volume, and temperature control",
+      "160 mm (6.3 inch) spout reach",
+      "Aerated flow",
+      "9.0 lpm (2.38 gpm) maximum flow rate at 3.0 bar (43.5 psi)",
+      "Drain sold separately",
+      "Premium material construction for durability and reliability",
+      "KOHLER finishes resist corrosion and tarnishing"
+    ],
+    "installation": {
+      "type": "Wall-mount",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Premium material construction",
+    "product_name": "Aleo+™ Wall-mount bathroom sink faucet trim, 9.0 lpm",
+    "source_pdf": "K-5684IN-4ND_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Wall-mount bathroom sink faucet trim",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Faucet Trim",
+    "subcategory_original": "Wall-mount bathroom sink faucet trim",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 22000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa15"
+    },
+    "product_id": "K-72298IN-4ND",
+    "category": "Faucet",
+    "collection": "Aleo™",
+    "color": [
+      "Polished Chrome",
+      "Vibrant® Brushed Bronze",
+      "Vibrant Rose Gold",
+      "Vibrant Brushed Rose Gold"
+    ],
+    "dimensions": {
+      "width_mm": 55,
+      "depth_mm": 120,
+      "height_mm": 200,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Tall height is ideal for vessel-style sinks",
+      "Single Lever handle allows for on/off activation, volume, and temperature control",
+      "Aerated flow",
+      "160 mm (6.3 inch) spout reach",
+      "212 mm (8.33 inch) spout height",
+      "8.33 inch (212 mm) spout height",
+      "2.37 gpm (8.9 lpm) maximum flow rate at 60 psi (4.14 bar)",
+      "KOHLER® ceramic disc valves exceed industry longevity standards for a lifetime of durable performance",
+      "Coordinates with other products in the Aleo™ collection",
+      "Drain sold separately"
+    ],
+    "installation": {
+      "type": "single-hole",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Premium metal",
+    "product_name": "Aleo® Tall single-handle bathroom sink faucet, 8.9 lpm",
+    "source_pdf": "K-72298IN-4ND_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Bathroom sink faucet",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Faucet",
+    "subcategory_original": "Bathroom sink faucet",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 28000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa16"
+    },
+    "product_id": "K-72337IN-4ND",
+    "category": "Faucet",
+    "collection": "Aleo+",
+    "color": [
+      "Polished Chrome",
+      "Vibrant® French Gold",
+      "Vibrant® Brushed Nickel",
+      "Vibrant® Brushed Bronze",
+      "Matte Black",
+      "Vibrant Rose Gold",
+      "Vibrant Brushed Rose Gold"
+    ],
+    "dimensions": {
+      "width_mm": 55,
+      "depth_mm": 120,
+      "height_mm": 200,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Tall height is ideal for vessel-style sinks",
+      "Single Lever handle allows for on/off activation, volume, and temperature control",
+      "6.22 inch (158 mm) spout reach",
+      "8.31 inch (211 mm) spout height",
+      "14.0 lpm (3.69 gpm) maximum flow rate at 3.0 bar (43.5 psi)",
+      "Aerated flow",
+      "KOHLER ceramic disc valves exceed industry longevity standards by over two times, ensuring durable performance for life"
+    ],
+    "installation": {
+      "type": "Deck-mount",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Premium metal",
+    "product_name": "Aleo+™ Tall single-handle bathroom sink faucet, 14.0 lpm",
+    "source_pdf": "K-72337IN-4ND_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Bathroom sink faucet",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Faucet",
+    "subcategory_original": "Bathroom sink faucet",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 28000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa17"
+    },
+    "product_id": "K-75374IN-1",
+    "category": "Bathroom sink",
+    "collection": "Forefront™",
+    "color": [
+      "White"
+    ],
+    "dimensions": {
+      "width_mm": 460,
+      "depth_mm": 460,
+      "height_mm": 120,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "source",
+        "depth_mm": "source",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Contemporary design makes a modern statement",
+      "Square basin",
+      "Rounded corners are easy to clean",
+      "An integrated faucet deck provides additional water containment",
+      "Single faucet hole at deck center",
+      "Without overflow",
+      "Glazed underside offers beauty from all angles",
+      "Coordinates with other products in the Forefront™ collection"
+    ],
+    "installation": {
+      "type": "Semi-recessed vessel",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Vitreous china",
+    "product_name": "Forefront™ 460 mm square vessel bathroom sink with glazed underside, no overflow",
+    "source_pdf": "K-75374IN-1_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Vessel sink",
+    "validation_problems": [
+      "Missing height"
+    ],
+    "category_original": "Bathroom sink",
+    "subcategory_original": "Vessel sink",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 21000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa18"
+    },
+    "product_id": "K-75375IN",
+    "category": "Bathroom sink",
+    "collection": "Forefront™",
+    "color": [
+      "White"
+    ],
+    "dimensions": {
+      "width_mm": 890,
+      "depth_mm": 534,
+      "height_mm": 120,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "source"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Contemporary design makes a modern statement",
+      "Elongated, rectangular basin",
+      "Shallow basin creates a sleek look",
+      "No faucet holes; requires wall- or deck-mount faucet",
+      "Without overflow",
+      "Coordinates with other products in the Forefront™ collection"
+    ],
+    "installation": {
+      "type": "Vessel",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Vitreous china",
+    "product_name": "Forefront™ 890 mm rectangular vessel bathroom sink, no overflow",
+    "source_pdf": "K-75375IN_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Vessel sink",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth"
+    ],
+    "category_original": "Bathroom sink",
+    "subcategory_original": "Vessel sink",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 32000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa19"
+    },
+    "product_id": "K-75377IN-4",
+    "category": "Bathroom sink faucet",
+    "collection": "July™",
+    "color": [
+      "Polished Chrome",
+      "Vibrant® French Gold",
+      "Vibrant® Brushed Nickel"
+    ],
+    "dimensions": {
+      "width_mm": 55,
+      "depth_mm": 120,
+      "height_mm": 150,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Versatile modern design",
+      "Single Lever handle provides on/off activation and volume control",
+      "For use with cold water line only",
+      "90 mm (3.5 inch) spout reach",
+      "75 mm (2.95 inch) spout height",
+      "Aerated flow",
+      "27.0 lpm (7.13 gpm) maximum flow rate at 3.0 bar (43.5 psi)",
+      "KOHLER® ceramic disc valves exceed industry longevity standards for a lifetime of durable performance",
+      "Premium material construction for durability and reliability",
+      "KOHLER finishes resist corrosion and tarnishing"
+    ],
+    "installation": {
+      "type": "Single-hole, Deck-mount",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Premium material",
+    "product_name": "July™ Single-handle bathroom sink faucet, cold only, 27.0 lpm",
+    "source_pdf": "K-75377IN-4_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Not specified",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Bathroom sink faucet",
+    "subcategory_original": "Not specified",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 12000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa1a"
+    },
+    "product_id": "K-77364IN",
+    "category": "Faucet",
+    "collection": "Luxe™",
+    "color": [
+      "Polished Chrome"
+    ],
+    "dimensions": {
+      "width_mm": 50,
+      "depth_mm": 100,
+      "height_mm": 150,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Ergonomic, easy clean design",
+      "Optimized sprayface for maximum performance",
+      "Precision flow control meets all user needs regardless of your home's water pressure",
+      "8.5 lpm (2.25 gpm) maximum flow rate at 3.0 bar (43.5 psi)",
+      "Includes 1200 mm (47.24 inch) hose and wall-mount holder"
+    ],
+    "installation": {
+      "type": "Wall-mount",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Antimicrobial silicone",
+    "product_name": "Health faucet, 8.5 lpm",
+    "source_pdf": "K-77364IN_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Not specified",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Faucet",
+    "subcategory_original": "Not specified",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 4500,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa1b"
+    },
+    "product_id": "K-97258IN-ZZ",
+    "category": "Faucet",
+    "collection": "Not specified",
+    "color": [
+      "Vibrant® French Gold",
+      "Vibrant® Brushed Bronze",
+      "Matte Black",
+      "Vibrant Rose Gold",
+      "Vibrant Brushed Rose Gold"
+    ],
+    "dimensions": {
+      "width_mm": 50,
+      "depth_mm": 100,
+      "height_mm": 150,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Single-function hygiene spray delivers a full, consistent stream, regardless of water pressure",
+      "Soft spray pattern",
+      "Ergonomic button design",
+      "2.25 gpm (8.5 lpm) maximum flow rate at 43.5 psi (3.0 bar)",
+      "Includes 59.06 inch (1500 mm) smooth hose and wall-mount holder",
+      "Includes a screen washer to prevent clogging"
+    ],
+    "installation": {
+      "type": "Wall-mount",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Premium material construction for durability and reliability",
+    "product_name": "Elate™ Single-function health faucet, 8.5 lpm",
+    "source_pdf": "K-97258IN-ZZ_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Health faucet",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Faucet",
+    "subcategory_original": "Health faucet",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 4500,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa1c"
+    },
+    "product_id": "K-97258IN",
+    "category": "Faucet",
+    "collection": "Not specified",
+    "color": [
+      "Polished Chrome",
+      "Matte Black"
+    ],
+    "dimensions": {
+      "width_mm": 50,
+      "depth_mm": 100,
+      "height_mm": 150,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Single-function hygiene spray delivers a full, consistent stream, regardless of water pressure",
+      "Soft spray pattern",
+      "Ergonomic button design",
+      "2.25 gpm (8.5 lpm) maximum flow rate at 43.5 psi (3.0 bar)",
+      "Includes 1200 mm (47.24 inch) hose and wall-mount holder",
+      "Includes a screen washer to prevent clogging"
+    ],
+    "installation": {
+      "type": "Wall-mount",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Premium material construction for durability and reliability",
+    "product_name": "Elate™ Single-function health faucet, 8.5 lpm",
+    "source_pdf": "K-97258IN_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Not specified",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Faucet",
+    "subcategory_original": "Not specified",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 4500,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa1d"
+    },
+    "product_id": "K-97347T-4",
+    "category": "Faucet",
+    "collection": "Avid™ Tall",
+    "color": [
+      "Polished Chrome"
+    ],
+    "dimensions": {
+      "width_mm": 55,
+      "depth_mm": 120,
+      "height_mm": 200,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "KOHLER ceramic disc valves exceed industry longevity standards for a lifetime of durable performance",
+      "Lever handle",
+      "Spout reach 148 mm",
+      "Includes flexible G 1/2 supply hoses for easy installation",
+      "Includes drain",
+      "Directionally adjustable, laminar-flow aerator"
+    ],
+    "installation": {
+      "type": "Not specified",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Brass",
+    "product_name": "Avid™ Tall Single-handle bathroom sink faucet",
+    "source_pdf": "K-97347T-4_spec_GPS_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Single-handle",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Faucet",
+    "subcategory_original": "Single-handle",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 28000,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa1e"
+    },
+    "product_id": "K-98100IN-ZZ",
+    "category": "Faucet",
+    "collection": "Not specified",
+    "color": [
+      "Matte Black"
+    ],
+    "dimensions": {
+      "width_mm": 50,
+      "depth_mm": 100,
+      "height_mm": 150,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Contemporary styling matches any decor",
+      "Easy grip design with special anti-slipping features",
+      "Single-function hygiene spray delivers a full, consistent stream, regardless of water pressure",
+      "10.0 lpm (2.64 gpm) maximum flow rate at 3.0 bar (43.5 psi)",
+      "Includes 59-1/16\" (1500 mm) hose and wall-mount holder"
+    ],
+    "installation": {
+      "type": "Wall-mount",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Premium material",
+    "product_name": "Beam™ Health faucet, 10 lpm",
+    "source_pdf": "K-98100IN-ZZ_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Health faucet",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Faucet",
+    "subcategory_original": "Health faucet",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 4500,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  },
+  {
+    "_id": {
+      "$oid": "6aa96a2826ad3942f37daa1f"
+    },
+    "product_id": "K-98100IN",
+    "category": "Faucet",
+    "collection": "Not specified",
+    "color": [
+      "Polished Chrome",
+      "White"
+    ],
+    "dimensions": {
+      "width_mm": 50,
+      "depth_mm": 100,
+      "height_mm": 150,
+      "width_mm_available": true,
+      "depth_mm_available": true,
+      "height_mm_available": true,
+      "dimension_source": {
+        "width_mm": "prototype_estimate",
+        "depth_mm": "prototype_estimate",
+        "height_mm": "prototype_estimate"
+      },
+      "all_dimensions_available": true
+    },
+    "electrical": {
+      "required": false,
+      "required_source": "source",
+      "voltage": "Not specified",
+      "power_w": -1,
+      "power_available": false
+    },
+    "extraction_method": "Groq text extraction",
+    "extraction_status": "success",
+    "features": [
+      "Contemporary styling matches any decor",
+      "Easy grip design with special anti-slipping features",
+      "Single-function hygiene spray delivers a full, consistent stream, regardless of water pressure",
+      "3.04 gpm (11.5 lpm) maximum flow rate at 58.02 psi (4 bar)",
+      "Includes 59.06 inch (1500 mm) smooth hose and wall-mount holder"
+    ],
+    "installation": {
+      "type": "Wall-mount",
+      "waste_outlet": "Not specified",
+      "rough_in_mm": -1,
+      "rough_in_available": false
+    },
+    "material": "Premium material construction",
+    "product_name": "Cuff™ Single-function health faucet, 11.5 lpm",
+    "source_pdf": "K-98100IN_spec_IN_Kohler_en.pdf",
+    "source_type": "KOHLER specification PDF",
+    "subcategory": "Health faucet",
+    "validation_problems": [
+      "Missing width",
+      "Missing depth",
+      "Missing height"
+    ],
+    "category_original": "Faucet",
+    "subcategory_original": "Health faucet",
+    "installation_type": "Not specified",
+    "waste_outlet": "Not specified",
+    "voltage": "Not specified",
+    "spatial_validation_possible": false,
+    "data_quality": "complete_with_unspecified_source_fields",
+    "pricing": {
+      "price_inr": 4500,
+      "currency": "INR",
+      "price_source": "prototype_estimate",
+      "price_estimated": true
+    },
+    "prototype_notes": "Estimated price and/or missing dimensions may be approximate; intended for prototype budget and spatial filtering, not real-world purchasing."
+  }
+]

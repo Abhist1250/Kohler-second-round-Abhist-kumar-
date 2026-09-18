@@ -1,0 +1,153 @@
+KOHLER AI BATHROOM DESIGNER
+============================================================
+
+**Your Japanese‑Zen Bathroom Design – Overview**
+
+| Item | Product | Key Highlights | Price (INR) |
+|------|---------|----------------|-------------|
+| Toilet | **KOHLER VIVE Hidden‑cord one‑piece round‑front back‑to‑wall toilet** (K‑33123IN‑HC) | One‑piece, rimless bowl; back‑to‑wall with skirted trapway for easy cleaning; dual‑flush (3 L / 4.5 L); hidden cord for a bidet seat (sold separately) | 42,000 |
+| Sink | **Span™ 537 mm rectangular vessel sink** (K‑25316IN) | Minimalist rectangular basin, thin rounded edges, glazed underside, integrated faucet deck, single‑hole layout, white vitreous‑china finish | 23,000 |
+| Faucet | **Aleo™ Tall single‑handle bathroom sink faucet** (K‑72337IN‑4ND) | Tall spout ideal for vessel sinks; single‑lever control; 14 L/min flow; polished‑chrome (or other Vibrant finishes); KOHLER ceramic disc valves for long life | 28,000 |
+| **Total** |  |  | **93,000** |
+
+**Budget** – Your total spend is ₹93,000, leaving **₹57,000** of the ₹150,000 budget available for any additional accessories, lighting, or décor you may wish to add.
+
+---
+
+### How the selected products meet your requirements  
+
+| Requirement | How it’s satisfied |
+|-------------|-------------------|
+| **Toilet** | The VIVE one‑piece, back‑to‑wall model gives a clean, seamless look that aligns with the uncluttered aesthetic of Japanese Zen. The rimless bowl and fully skirted trapway make cleaning simple, supporting the Zen principle of hygiene and simplicity. |
+| **Sink** | The Span™ vessel sink is a sleek, rectangular form with thin, rounded edges—exactly the minimalist shape favored in Zen design. Its white vitreous‑china finish and glazed underside keep the visual focus pure and calm. |
+| **Faucet** | The Aleo™ tall single‑handle faucet is purpose‑built for vessel sinks, providing a streamlined silhouette that doesn’t distract from the sink’s clean lines. The polished‑chrome finish mirrors the subtle reflective quality often used in Zen spaces. |
+| **Design Theme** | All three pieces are white (toilet, sink) or polished chrome (faucet), creating a neutral, tranquil palette typical of Japanese‑Zen interiors. The minimal hardware, hidden‑cord toilet, and lack of unnecessary ornamentation reinforce the theme’s emphasis on simplicity and serenity. |
+
+---
+
+### Spatial validation  
+
+- **Status:** **PASS**  
+- **What it means:** The layout engine placed the two floor‑level fixtures (toilet and sink) so that they do not collide with each other or block the bathroom door. The design therefore fits comfortably within the 8 ft × 6 ft (≈ 2.44 m × 1.83 m) space you provided.  
+
+---
+
+### Known limitations / missing data  
+
+- Exact **dimensions** (width, depth, height) for the toilet, sink, and faucet are **not specified** in the catalog data, so precise clearance calculations are not shown.  
+- **Installation type** (wall‑mount, floor‑mount, etc.) for each product is **not specified**.  
+- The toilet’s **material** is listed as “Not specified.”  
+- The faucet offers several colour options (Polished Chrome, Vibrant French Gold, etc.); the design assumes the polished‑chrome finish to stay consistent with the Zen palette, but other finishes are available if you prefer.  
+
+If you need any of these details clarified or wish to explore additional accessories (e.g., a bidet seat compatible with the hidden cord, lighting, or storage), the remaining budget gives you flexibility to do so.
+
+Verified Design Data
+============================================================
+
+{
+  "bathroom": {
+    "length_ft": 8,
+    "width_ft": 6,
+    "length_mm": 2438.4,
+    "width_mm": 1828.8000000000002
+  },
+  "budget": {
+    "budget_inr": 150000.0,
+    "total_price_inr": 93000.0,
+    "remaining_budget_inr": 57000.0
+  },
+  "design_theme": "Japanese Zen",
+  "required_categories": [
+    "Toilet",
+    "Faucet",
+    "Sink"
+  ],
+  "products": [
+    {
+      "category": "Toilet",
+      "product_id": "K-33123IN-HC",
+      "product_name": "KOHLER VIVE Hidden cord one-piece round-front back-to-wall toilet with skirted trapway, dual-flush",
+      "price_inr": 42000.0,
+      "width_mm": null,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "Not specified",
+      "color": [
+        "White"
+      ],
+      "installation_type": "Not specified",
+      "features": [
+        "One-piece toilets integrate the tank and bowl into a seamless, easy-to-clean design",
+        "Round-front bowl",
+        "Back-to-wall design prevents dirt buildup for improved hygiene",
+        "Rimless design makes toilet bowl more hygienic and easier to clean",
+        "Top-mount polished chrome dual-flush button offers a choice of 3.0 or 4.5 lpf (0.8 or 1.28 gpf)",
+        "60 mm fully glazed trapway",
+        "Fully skirted trapway simplifies cleaning and looks elegant",
+        "Washdown flushing system",
+        "Coordinates with other products in the Vive collection",
+        "Hidden cord design conceals bidet seat cords (bidet seat sold separately)",
+        "Compatible with PureWash manual bidet seat"
+      ],
+      "subcategory": "Not specified"
+    },
+    {
+      "category": "Sink",
+      "product_id": "K-25316IN",
+      "product_name": "Span\u2122 537 mm rectangular vessel bathroom sink with glazed underside, no overflow",
+      "price_inr": 23000.0,
+      "width_mm": null,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "Vitreous china",
+      "color": [
+        "White"
+      ],
+      "installation_type": "Not specified",
+      "features": [
+        "Minimalist design with thin, rounded edges",
+        "Rectangular basin",
+        "Integrated faucet deck provides additional water containment",
+        "Single faucet hole at deck center",
+        "Without overflow",
+        "Glazed underside offers beauty from all angles"
+      ],
+      "subcategory": "Vessel sink"
+    },
+    {
+      "category": "Faucet",
+      "product_id": "K-72337IN-4ND",
+      "product_name": "Aleo+\u2122 Tall single-handle bathroom sink faucet, 14.0 lpm",
+      "price_inr": 28000.0,
+      "width_mm": null,
+      "depth_mm": null,
+      "height_mm": null,
+      "material": "Premium metal",
+      "color": [
+        "Polished Chrome",
+        "Vibrant\u00ae French Gold",
+        "Vibrant\u00ae Brushed Nickel",
+        "Vibrant\u00ae Brushed Bronze",
+        "Matte Black",
+        "Vibrant Rose Gold",
+        "Vibrant Brushed Rose Gold"
+      ],
+      "installation_type": "Not specified",
+      "features": [
+        "Tall height is ideal for vessel-style sinks",
+        "Single Lever handle allows for on/off activation, volume, and temperature control",
+        "6.22 inch (158 mm) spout reach",
+        "8.31 inch (211 mm) spout height",
+        "14.0 lpm (3.69 gpm) maximum flow rate at 3.0 bar (43.5 psi)",
+        "Aerated flow",
+        "KOHLER ceramic disc valves exceed industry longevity standards by over two times, ensuring durable performance for life"
+      ],
+      "subcategory": "Bathroom sink faucet"
+    }
+  ],
+  "spatial_validation": {
+    "status": "PASS",
+    "reason": "All floor fixtures were placed without collision and without blocking the door.",
+    "fixture_count": 2
+  }
+}

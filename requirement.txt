@@ -19,3 +19,4 @@ pillow
 sentence-transformers
 scikit-learn
 chromadb
+gradio

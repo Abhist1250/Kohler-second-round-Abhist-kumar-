@@ -14,3 +14,8 @@ langchain-groq
 python-dotenv
 langchain
 openai
+pytesseract
+pillow
+sentence-transformers
+scikit-learn
+chromadb

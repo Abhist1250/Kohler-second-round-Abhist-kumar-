@@ -43,9 +43,17 @@ except ImportError:
 
 
 BASE_DIR = Path(__file__).resolve().parent
-DATA_PATH = BASE_DIR / "data" / "products.json"
-CHROMA_PATH = BASE_DIR / "data" / "chroma_db"
-COLLECTION_NAME = "kohler_products"
+DATA_DIR = BASE_DIR / "data"
+DATA_PATH = DATA_DIR / "products.json"
+# Fallbacks keep the standalone app connected to the prototype catalog even
+# when products.json was copied from the earlier raw extraction.
+FALLBACK_CATALOG_PATHS = [
+    DATA_DIR / "kohler_ai_bathroom.products_prototype_budget_dimensions.json",
+    BASE_DIR.parent / "KOHLER" / "DATA" /
+        "kohler_ai_bathroom.products_prototype_budget_dimensions.json",
+]
+CHROMA_PATH = DATA_DIR / "chroma_db"
+COLLECTION_NAME = "kohler_products_v2"
 
 FT_TO_MM = 304.8
 SPATIAL_CLEARANCE_MM = 200.0
@@ -174,18 +182,65 @@ _collection = None
 _embedding_function = None
 
 
+def _catalog_is_usable(path: Path) -> bool:
+    """Return True when a catalog contains the fields needed by the optimizer."""
+    if not path.exists():
+        return False
+
+    try:
+        with open(path, "r", encoding="utf-8") as file:
+            data = json.load(file)
+        if not isinstance(data, list) or not data:
+            return False
+
+        df = pd.json_normalize(data)
+        required = {
+            "product_id",
+            "category",
+            "pricing.price_inr",
+            "dimensions.width_mm",
+            "dimensions.depth_mm",
+        }
+        if not required.issubset(df.columns):
+            return False
+
+        prices = pd.to_numeric(df["pricing.price_inr"], errors="coerce")
+        widths = pd.to_numeric(df["dimensions.width_mm"], errors="coerce")
+        depths = pd.to_numeric(df["dimensions.depth_mm"], errors="coerce")
+
+        # We need at least one usable product in each core category.
+        usable = (prices > 0) & (widths > 0) & (depths > 0)
+        categories = df.loc[usable, "category"].astype(str).map(normalize_category)
+        return {"Toilet", "Sink", "Faucet"}.issubset(set(categories))
+    except Exception:
+        return False
+
+
+def resolve_catalog_path() -> Path:
+    """Choose the portable project catalog, then the known prototype fallback."""
+    if _catalog_is_usable(DATA_PATH):
+        return DATA_PATH
+
+    for fallback in FALLBACK_CATALOG_PATHS:
+        if _catalog_is_usable(fallback):
+            return fallback
+
+    checked = [DATA_PATH, *FALLBACK_CATALOG_PATHS]
+    raise FileNotFoundError(
+        "No usable KOHLER prototype catalog was found. Checked: "
+        + "; ".join(str(path) for path in checked)
+    )
+
+
 def load_catalog() -> pd.DataFrame:
     global _products, _catalog_df
 
     if _catalog_df is not None:
         return _catalog_df
 
-    if not DATA_PATH.exists():
-        raise FileNotFoundError(
-            f"Product catalog not found: {DATA_PATH}"
-        )
+    catalog_path = resolve_catalog_path()
 
-    with open(DATA_PATH, "r", encoding="utf-8") as file:
+    with open(catalog_path, "r", encoding="utf-8") as file:
         _products = json.load(file)
 
     if not isinstance(_products, list) or not _products:
@@ -515,14 +570,20 @@ def get_theme_candidates(
 
     # Semantic search is used for relevance; physical candidates remain
     # the authoritative allowed pool.
-    semantic = semantic_search(
-        query=query,
-        n_results=min(max(top_k * 2, top_k), max(1, len(dataframe))),
-        category=normalize_category(category),
-    )
+    try:
+        semantic = semantic_search(
+            query=query,
+            n_results=min(max(top_k * 2, top_k), max(1, len(dataframe))),
+            category=normalize_category(category),
+        )
+    except Exception:
+        # Retrieval should improve ranking, never make the core optimizer fail.
+        physical = physical.copy()
+        physical["semantic_distance"] = 999.0
+        return physical.head(max(1, int(top_k))).copy()
 
-    ids = semantic.get("ids", [[]])[0]
-    distances = semantic.get("distances", [[]])[0]
+    ids = semantic.get("ids", [[]])[0] or []
+    distances = semantic.get("distances", [[]])[0] or []
 
     distance_map = {
         str(pid): safe_float(dist, 999)
@@ -611,6 +672,16 @@ def build_layout_for_bundle(
     door_clearance_mm: float = DEFAULT_DOOR_CLEARANCE_MM,
     fixture_clearance_mm: float = SPATIAL_CLEARANCE_MM,
 ) -> Dict[str, Any]:
+    """
+    Build a deterministic top-down bathroom layout.
+
+    Important layout rule:
+    - Faucets are NOT treated as independent floor fixtures.
+    - When a sink/basin is present, the faucet is mounted at the back edge
+      of that sink and is drawn directly above/behind it in the 2D view.
+    - Because the faucet is sink-mounted, its clearance rectangle is not
+      used as a separate floor-space obstacle.
+    """
     if not bundle:
         return {
             "status": "FAIL",
@@ -618,11 +689,10 @@ def build_layout_for_bundle(
             "placements": [],
         }
 
-    # The prototype reserves a centered door opening on the bottom wall.
     door_x = (room_width_mm - door_width_mm) / 2
     door_zone = (door_x, 0, door_width_mm, door_clearance_mm)
 
-    # Try several deterministic anchor positions.
+    # Deterministic anchors for floor-mounted fixtures.
     anchors = [
         ("top-left", 0.0, room_length_mm),
         ("top-right", room_width_mm, room_length_mm),
@@ -633,21 +703,15 @@ def build_layout_for_bundle(
         ("top-center", room_width_mm / 2, room_length_mm),
     ]
 
-    placements = []
-    occupied_clearance = []
+    placements: List[Dict[str, Any]] = []
+    occupied_clearance: List[Tuple[float, float, float, float]] = []
 
-    for category, product in bundle.items():
+    def place_floor_fixture(category: str, product: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         dims = get_fixture_dimensions(product)
-
         if dims is None:
-            return {
-                "status": "FAIL",
-                "reason": f"Missing usable dimensions for {category}.",
-                "placements": [],
-            }
+            return None
 
         width, depth = dims
-        placed = None
 
         orientations = [
             (width, depth, False),
@@ -656,8 +720,6 @@ def build_layout_for_bundle(
 
         for candidate_width, candidate_depth, rotated in orientations:
             for anchor_name, anchor_x, anchor_y in anchors:
-                # Place relative to the anchor while keeping the fixture
-                # inside the room.
                 if "right" in anchor_name:
                     x = anchor_x - candidate_width
                 elif "center" in anchor_name:
@@ -679,7 +741,6 @@ def build_layout_for_bundle(
                 ):
                     continue
 
-                # Floor fixtures cannot occupy the door clearance zone.
                 if rectangles_overlap(rect, door_zone):
                     continue
 
@@ -693,7 +754,7 @@ def build_layout_for_bundle(
                 ):
                     continue
 
-                placed = {
+                return {
                     "category": category,
                     "product_id": product.get("product_id"),
                     "product_name": product.get("product_name"),
@@ -704,38 +765,172 @@ def build_layout_for_bundle(
                     "rotated": rotated,
                     "anchor": anchor_name,
                     "clearance_mm": float(fixture_clearance_mm),
+                    "mounted_fixture": False,
                 }
-                break
 
-            if placed:
-                break
+        return None
 
-        if not placed:
-            return {
-                "status": "FAIL",
-                "reason": (
+    # 1) Place all floor fixtures first, except faucets.
+    #    This guarantees the sink exists before its faucet is positioned.
+    deferred_faucets: List[Tuple[str, Dict[str, Any]]] = []
+
+    for category, product in bundle.items():
+        if normalize_category(category) == "Faucet":
+            deferred_faucets.append((category, product))
+            continue
+
+        placement = place_floor_fixture(category, product)
+
+        if placement is None:
+            dims = get_fixture_dimensions(product)
+            if dims is None:
+                reason = f"Missing usable dimensions for {category}."
+            else:
+                reason = (
                     f"Could not place {category} without overlap, "
                     "room-boundary violation, or door obstruction."
-                ),
+                )
+
+            return {
+                "status": "FAIL",
+                "reason": reason,
                 "placements": placements,
             }
 
-        placements.append(placed)
+        placements.append(placement)
         occupied_clearance.append(
             expand_rectangle(
                 (
-                    placed["x_mm"],
-                    placed["y_mm"],
-                    placed["width_mm"],
-                    placed["depth_mm"],
+                    placement["x_mm"],
+                    placement["y_mm"],
+                    placement["width_mm"],
+                    placement["depth_mm"],
                 ),
                 fixture_clearance_mm,
             )
         )
 
+    # 2) Mount each faucet directly above the sink/basin.
+    sink_placement = next(
+        (
+            placement
+            for placement in placements
+            if normalize_category(placement.get("category")) == "Sink"
+        ),
+        None,
+    )
+
+    for category, product in deferred_faucets:
+        dims = get_fixture_dimensions(product)
+
+        if dims is None:
+            return {
+                "status": "FAIL",
+                "reason": f"Missing usable dimensions for {category}.",
+                "placements": placements,
+            }
+
+        faucet_width, faucet_depth = dims
+
+        if sink_placement is not None:
+            # Faucet is centered on the sink's back/top edge.
+            # It slightly overlaps the sink rectangle to visually represent
+            # a deck-mounted/back-mounted faucet rather than a floor fixture.
+            sink_x = sink_placement["x_mm"]
+            sink_y = sink_placement["y_mm"]
+            sink_width = sink_placement["width_mm"]
+            sink_depth = sink_placement["depth_mm"]
+
+            # Position the faucet on the sink's rear/top edge.  The faucet
+            # is allowed to overlap the sink rectangle because it represents
+            # a mounted fixture, not a separate floor fixture.
+            #
+            # Clamp both axes so a sink placed against the wall never causes
+            # the faucet to extend outside the bathroom boundary.
+            faucet_x = sink_x + (sink_width - faucet_width) / 2
+            faucet_x = max(0.0, min(
+                faucet_x,
+                room_width_mm - faucet_width,
+            ))
+
+            faucet_y = sink_y + sink_depth - faucet_depth
+            faucet_y = max(0.0, min(
+                faucet_y,
+                room_length_mm - faucet_depth,
+            ))
+
+            faucet_rect = (
+                faucet_x,
+                faucet_y,
+                faucet_width,
+                faucet_depth,
+            )
+
+            # Keep the mounted faucet within the room. The faucet may overlap
+            # the sink because it is intentionally attached to the sink.
+            if not rectangle_inside_room(
+                faucet_rect, room_length_mm, room_width_mm
+            ):
+                return {
+                    "status": "FAIL",
+                    "reason": (
+                        "Could not mount the faucet above the sink "
+                        "within the room boundary."
+                    ),
+                    "placements": placements,
+                }
+
+            placements.append({
+                "category": category,
+                "product_id": product.get("product_id"),
+                "product_name": product.get("product_name"),
+                "x_mm": float(faucet_x),
+                "y_mm": float(faucet_y),
+                "width_mm": float(faucet_width),
+                "depth_mm": float(faucet_depth),
+                "rotated": False,
+                "anchor": "sink-mounted",
+                "clearance_mm": 0.0,
+                "mounted_fixture": True,
+                "attached_to": "Sink",
+                "mount_position": "above_sink",
+            })
+
+        else:
+            # If a user selects a faucet without a sink, retain the old
+            # deterministic floor-placement fallback.
+            placement = place_floor_fixture(category, product)
+
+            if placement is None:
+                return {
+                    "status": "FAIL",
+                    "reason": (
+                        f"Could not place {category} without overlap, "
+                        "room-boundary violation, or door obstruction."
+                    ),
+                    "placements": placements,
+                }
+
+            placements.append(placement)
+            occupied_clearance.append(
+                expand_rectangle(
+                    (
+                        placement["x_mm"],
+                        placement["y_mm"],
+                        placement["width_mm"],
+                        placement["depth_mm"],
+                    ),
+                    fixture_clearance_mm,
+                )
+            )
+
     return {
         "status": "PASS",
-        "reason": "All selected fixtures were placed without detected spatial conflicts.",
+        "reason": (
+            "All selected fixtures were placed without detected spatial "
+            "conflicts; faucets are mounted directly above the sink when "
+            "a sink is present."
+        ),
         "placements": placements,
         "door": {
             "x_mm": door_x,
@@ -1332,29 +1527,54 @@ def plot_bathroom_layout(
     show_clearance: bool = True,
     show_dimensions: bool = True,
 ):
+    """
+    Render the bathroom plan in the same visual style as the reference layout:
+
+    - White/light plotting area with a strong black room boundary.
+    - Toilet at the upper-left and sink at the upper-right when possible.
+    - Faucet shown as a small red mounted component directly above the sink.
+    - Blue toilet, green sink, red faucet visual language.
+    - Light dashed clearance rectangles around floor fixtures.
+    - Bottom-centered door with black swing arc and dotted door-clearance box.
+    - Product IDs and dimensions displayed close to each fixture.
+    """
     if layout is None or layout.get("status") != "PASS":
         return None
 
-    fig, ax = plt.subplots(figsize=(11, 8))
+    fig, ax = plt.subplots(figsize=(11, 8.5))
+    fig.patch.set_facecolor("white")
+    ax.set_facecolor("white")
 
+    # -----------------------------------------------------------------
+    # Room boundary
+    # -----------------------------------------------------------------
     ax.add_patch(
         Rectangle(
             (0, 0),
             room_width_mm,
             room_length_mm,
             fill=False,
-            linewidth=2.5,
+            edgecolor="black",
+            linewidth=3.0,
+            zorder=5,
         )
     )
 
+    # -----------------------------------------------------------------
+    # Door + swing + clearance
+    # -----------------------------------------------------------------
     door_x = (room_width_mm - door_width_mm) / 2
+
     ax.plot(
         [door_x, door_x + door_width_mm],
         [0, 0],
-        linewidth=8,
+        color="#168ac4",
+        linewidth=10,
         solid_capstyle="butt",
+        zorder=8,
     )
 
+    # Swing arc matches the reference: opens into the room.
     ax.add_patch(
         Arc(
             (door_x, 0),
@@ -1362,19 +1582,11 @@ def plot_bathroom_layout(
             2 * door_width_mm,
             theta1=0,
             theta2=90,
-            linewidth=1.2,
+            color="black",
+            linewidth=2.0,
             linestyle="--",
+            zorder=6,
         )
-    )
-
-    ax.text(
-        door_x + door_width_mm / 2,
-        -90,
-        "DOOR",
-        ha="center",
-        va="center",
-        fontsize=11,
-        fontweight="bold",
     )
 
     if show_clearance:
@@ -1384,107 +1596,296 @@ def plot_bathroom_layout(
                 door_width_mm,
                 door_clearance_mm,
                 fill=False,
-                linewidth=1,
+                edgecolor="#777777",
+                linewidth=1.5,
                 linestyle=":",
-                alpha=0.7,
+                zorder=2,
             )
         )
+        ax.plot(
+            [door_x, door_x + door_width_mm],
+            [0, door_clearance_mm],
+            color="#ff8c00",
+            linewidth=1.8,
+            linestyle="--",
+            zorder=3,
+        )
+        ax.text(
+            door_x + door_width_mm / 2,
+            door_clearance_mm / 2,
+            "Door\nClearance",
+            ha="center",
+            va="center",
+            fontsize=10,
+            color="#777777",
+            zorder=4,
+        )
 
-    for placement in layout.get("placements", []):
-        category = placement.get("category", "Fixture")
+    ax.text(
+        door_x + door_width_mm / 2,
+        -105,
+        "DOOR",
+        ha="center",
+        va="center",
+        fontsize=14,
+        fontweight="bold",
+        color="black",
+        zorder=10,
+    )
+
+    # -----------------------------------------------------------------
+    # Fixture drawing
+    # -----------------------------------------------------------------
+    fixture_colors = {
+        "Toilet": "#a9d9ea",
+        "Sink": "#8fe58f",
+        "Faucet": "#e53935",
+        "Vanity": "#e8d7b7",
+        "Bathtub": "#dca8df",
+    }
+
+    # Draw floor fixtures first. This preserves the reference ordering.
+    floor_placements = [
+        p for p in layout.get("placements", [])
+        if not bool(p.get("mounted_fixture", False))
+    ]
+
+    mounted_placements = [
+        p for p in layout.get("placements", [])
+        if bool(p.get("mounted_fixture", False))
+    ]
+
+    # Put toilet before sink visually even if dictionary order changes.
+    category_order = {
+        "Toilet": 0,
+        "Sink": 1,
+        "Vanity": 2,
+        "Bathtub": 3,
+        "Other": 4,
+    }
+    floor_placements.sort(
+        key=lambda p: category_order.get(normalize_category(p.get("category")), 99)
+    )
+
+    for placement in floor_placements:
+        category = normalize_category(placement.get("category", "Fixture"))
         x = float(placement["x_mm"])
         y = float(placement["y_mm"])
         width = float(placement["width_mm"])
         depth = float(placement["depth_mm"])
+
+        face = fixture_colors.get(category, "#b9c2cc")
 
         ax.add_patch(
             Rectangle(
                 (x, y),
                 width,
                 depth,
-                alpha=0.65,
-                linewidth=2,
+                facecolor=face,
+                edgecolor="black",
+                linewidth=2.0,
+                alpha=0.78,
+                zorder=10,
             )
         )
 
+        # Clearance rectangle, visually similar to the reference image.
         if show_clearance:
-            c = safe_float(
+            clearance = safe_float(
                 placement.get("clearance_mm"),
                 SPATIAL_CLEARANCE_MM,
             )
             ax.add_patch(
                 Rectangle(
-                    (x - c, y - c),
-                    width + 2 * c,
-                    depth + 2 * c,
+                    (x - clearance, y - clearance),
+                    width + 2 * clearance,
+                    depth + 2 * clearance,
                     fill=False,
-                    linewidth=0.8,
+                    edgecolor="#999999",
+                    linewidth=1.2,
                     linestyle="--",
-                    alpha=0.3,
+                    alpha=0.55,
+                    zorder=4,
                 )
             )
 
+        # Main fixture label.
+        label = f"{category}\n{width:.0f} × {depth:.0f} mm"
         ax.text(
             x + width / 2,
             y + depth / 2,
-            f"{category}\n{width:.0f} × {depth:.0f} mm",
+            label,
             ha="center",
             va="center",
-            fontsize=9,
+            fontsize=11,
             fontweight="bold",
+            color="black",
+            zorder=12,
+        )
+
+        # Product ID below the fixture, as in the reference image.
+        product_id = str(placement.get("product_id", ""))
+        if product_id:
+            ax.text(
+                x + width / 2,
+                y - 35,
+                product_id,
+                ha="center",
+                va="top",
+                fontsize=8,
+                color="#333333",
+                zorder=12,
+            )
+
+        # Product name above the fixture, truncated so the plan remains clean.
+        product_name = str(placement.get("product_name", ""))
+        if product_name:
+            max_chars = 34 if category == "Toilet" else 30
+            short_name = (
+                product_name[:max_chars - 1] + "…"
+                if len(product_name) > max_chars
+                else product_name
+            )
+            ax.text(
+                x + width / 2,
+                y + depth + 45,
+                short_name,
+                ha="center",
+                va="bottom",
+                fontsize=7.5,
+                color="#333333",
+                zorder=12,
+            )
+
+    # -----------------------------------------------------------------
+    # Faucet mounted directly above the sink
+    # -----------------------------------------------------------------
+    for placement in mounted_placements:
+        category = normalize_category(placement.get("category", "Faucet"))
+        x = float(placement["x_mm"])
+        y = float(placement["y_mm"])
+        width = float(placement["width_mm"])
+        depth = float(placement["depth_mm"])
+
+        # Small red component matching the reference image.
+        faucet_width = max(28.0, min(width, 55.0))
+        faucet_depth = max(45.0, min(depth, 85.0))
+        faucet_x = x + (width - faucet_width) / 2
+
+        # Keep the visible faucet on the sink's upper/back edge.
+        faucet_y = y + depth - faucet_depth
+
+        ax.add_patch(
+            Rectangle(
+                (faucet_x, faucet_y),
+                faucet_width,
+                faucet_depth,
+                facecolor="#e53935",
+                edgecolor="black",
+                linewidth=1.2,
+                alpha=0.95,
+                zorder=16,
+            )
+        )
+
+        # Small vertical connector into the sink, making the attachment obvious.
+        ax.plot(
+            [faucet_x + faucet_width / 2, faucet_x + faucet_width / 2],
+            [faucet_y, faucet_y - min(35.0, faucet_depth / 2)],
+            color="#e53935",
+            linewidth=3,
+            zorder=15,
         )
 
         ax.text(
-            x + width / 2,
-            y - 35,
-            str(placement.get("product_id", "")),
+            faucet_x + faucet_width / 2,
+            faucet_y + faucet_depth + 18,
+            "Faucet",
             ha="center",
-            va="top",
-            fontsize=7,
+            va="bottom",
+            fontsize=8,
+            fontweight="bold",
+            color="#333333",
+            zorder=17,
         )
 
+        product_id = str(placement.get("product_id", ""))
+        if product_id:
+            ax.text(
+                faucet_x + faucet_width / 2,
+                faucet_y - 12,
+                product_id,
+                ha="center",
+                va="top",
+                fontsize=6.5,
+                color="#333333",
+                zorder=17,
+            )
+
+    # -----------------------------------------------------------------
+    # Room dimensions
+    # -----------------------------------------------------------------
     if show_dimensions:
+        # Width dimension below the room.
         ax.annotate(
             "",
-            xy=(0, -220),
-            xytext=(room_width_mm, -220),
-            arrowprops={"arrowstyle": "<->"},
+            xy=(0, -225),
+            xytext=(room_width_mm, -225),
+            arrowprops={
+                "arrowstyle": "<->",
+                "linewidth": 1.4,
+                "color": "black",
+            },
         )
         ax.text(
             room_width_mm / 2,
-            -300,
+            -315,
             f"{room_width_mm / FT_TO_MM:.1f} ft",
             ha="center",
             va="center",
-            fontsize=10,
+            fontsize=11,
+            color="black",
         )
 
+        # Length dimension to the right of the room.
         ax.annotate(
             "",
             xy=(room_width_mm + 220, 0),
             xytext=(room_width_mm + 220, room_length_mm),
-            arrowprops={"arrowstyle": "<->"},
+            arrowprops={
+                "arrowstyle": "<->",
+                "linewidth": 1.4,
+                "color": "black",
+            },
         )
         ax.text(
-            room_width_mm + 300,
+            room_width_mm + 310,
             room_length_mm / 2,
             f"{room_length_mm / FT_TO_MM:.1f} ft",
             ha="center",
             va="center",
             rotation=90,
-            fontsize=10,
+            fontsize=11,
+            color="black",
         )
 
-    ax.set_xlim(-400, room_width_mm + 500)
-    ax.set_ylim(-450, room_length_mm + 200)
+    # -----------------------------------------------------------------
+    # Final theme / axes
+    # -----------------------------------------------------------------
+    ax.set_xlim(-420, room_width_mm + 520)
+    ax.set_ylim(-470, room_length_mm + 260)
     ax.set_aspect("equal")
-    ax.set_xlabel("Width (mm)")
-    ax.set_ylabel("Length (mm)")
-    ax.set_title(title, fontsize=14, fontweight="bold")
-    ax.grid(alpha=0.12)
+    ax.set_xlabel("Width (mm)", fontsize=10)
+    ax.set_ylabel("Length (mm)", fontsize=10)
+    ax.set_title(title, fontsize=15, fontweight="bold", pad=14)
+    ax.grid(alpha=0.14, linewidth=0.7)
 
+    # Keep the reference's clean presentation without a heavy legend.
+    for spine in ax.spines.values():
+        spine.set_linewidth(1.0)
+
+    fig.tight_layout()
     return fig
-
 
 def save_layout_image(
     layout: Dict[str, Any],

@@ -1,0 +1,7 @@
+Step 2:- Create a envirnoment of version python 14 or more
+step 3 :- Activate the envirnoment
+Step 3:- Install all the modules from the requirements.txt
+(pip install -r requirement.txt)
+
+Step 4:- run backend.py
+step 5 :- run app.py

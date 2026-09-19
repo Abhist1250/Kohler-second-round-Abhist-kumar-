@@ -1,7 +1,8 @@
+step 1:- Clone from github repository
 Step 2:- Create a envirnoment of version python 14 or more
 step 3 :- Activate the envirnoment
-Step 3:- Install all the modules from the requirements.txt
+Step 4:- Install all the modules from the requirements.txt
 (pip install -r requirement.txt)
 
-Step 4:- run backend.py
-step 5 :- run app.py
+Step 5:- run backend.py
+step 6:- run app.py
